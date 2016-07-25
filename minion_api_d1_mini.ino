@@ -89,7 +89,7 @@ void setup(void)
   // Handle http requests
   server.on("/", handle_root);
 
-  server.on("/v1/beedoo/auth/KXxAcJDMhGpWOVP0gWM9", []() {
+  server.on("/v1/beedoo/auth/ZTEHOo8DGDYqyJakEDOx", []() {
     char response[50];
     snprintf(response, 50, "beedoo");
     digitalWrite(D2, HIGH);
@@ -98,7 +98,7 @@ void setup(void)
     server.send(200, "text/plain", response);
   });
 
-  server.on("/v1/megafon/auth/KXxAcJDMhGpWOVP0gWM9", []() {
+  server.on("/v1/megafon/auth/ZTEHOo8DGDYqyJakEDOx", []() {
     char response[50];
     snprintf(response, 50, "megafon");
     digitalWrite(D1, HIGH);
@@ -107,7 +107,7 @@ void setup(void)
     server.send(200, "text/plain", response);
   });
 
-  server.on("/v1/right/auth/KXxAcJDMhGpWOVP0gWM9", []() {
+  server.on("/v1/right/auth/ZTEHOo8DGDYqyJakEDOx", []() {
     char response[50];
     snprintf(response, 50, "right hand");
     digitalWrite(D5, HIGH);
